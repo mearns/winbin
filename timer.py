@@ -16,6 +16,9 @@ VER_PATCH = 0
 VER_SEMANTIC = 0
 
 def timer(count, command_args, nooutput=False):
+    if len(command_args) == 0:
+        return 0, 0.0
+
     r = range(count)
     codes = [0]*count
     if nooutput:
