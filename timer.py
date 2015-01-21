@@ -50,11 +50,11 @@ def format_time(seconds):
 
     output = ""
     if weeks:
-        output += "%d w "
+        output += "%d w " % weeks
     if hours:
-        output += "%d d "
+        output += "%d d " % days
     if mins:
-        output += "%d m "
+        output += "%d m " % mins
     output += "%.3f s" % seconds
 
     return output
